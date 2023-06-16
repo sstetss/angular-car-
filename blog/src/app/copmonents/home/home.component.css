@@ -1,0 +1,20 @@
+.carousel-caption{
+   background-color: aliceblue;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.car-img{
+   opacity: 0.9;
+}
+
+#carouselExampleDark{
+  height: 700px;
+}
+
+.carousel-inner{
+   height: 700px;
+}
+.carousel-item{
+   height: 700px;
+}

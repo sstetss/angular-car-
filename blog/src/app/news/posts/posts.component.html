@@ -1,0 +1,20 @@
+<table class="table">
+   <thead>
+     <tr>
+       <th scope="col">Title</th>
+       <th scope="col">Info</th>
+       <th scope="col">Buttons</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let item of items">
+       <td style="font-weight: 700;max-width: 200px;">{{item.title}}</td>
+       <td style="max-width: 500px;">{{item.info}}</td>
+       <td style="width: 30%;margin: 0 auto;">
+         <button (click)="getItem(item._id)" type="button" style="margin-right: 10px;" class="btn btn-outline-primary">Show</button>
+         <button (click)="editItem(item._id)" type="button" style="margin-right: 10px;" class="btn btn-outline-warning">Edit</button>
+         <button (click)="deleteItem(item._id)" type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
+     </tr>
+   </tbody>
+ </table>

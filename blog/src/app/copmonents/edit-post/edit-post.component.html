@@ -1,0 +1,16 @@
+<div class="box">
+   <div class="cars-detail">
+      <div class="info">
+        <h2>Title:</h2>
+         <input [(ngModel)]="editTitle" class="form-control" type="text" value={{item.title}} aria-label="default input example">
+         <h2>Info:</h2>
+         <input  [(ngModel)]="editInfo" class="form-control" type="text" value={{item.info}} aria-label="default input example">
+         <h2>Image:</h2>
+         <input  [(ngModel)]="editImage" class="form-control" type="text" value={{item.image}} aria-label="default input example">
+      </div>
+      <button (click)="editPost(item._id)" type="button" class="btn btn-warning ms-1 mb-10">Confirm</button>
+   </div>
+   
+   
+   <button (click)="back()" type="button" class="btn btn-primary">Back</button>
+</div>

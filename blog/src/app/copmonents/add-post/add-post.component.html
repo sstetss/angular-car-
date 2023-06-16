@@ -1,0 +1,14 @@
+<div class="box">
+   <div class="cars-detail">
+      <div class="info">
+        <h2>Title:</h2>
+         <input [(ngModel)]="editTitle" class="form-control" placeholder="Write your Title" type="text"  aria-label="default input example">
+         <h2>Info:</h2>
+         <input  [(ngModel)]="editInfo" class="form-control" placeholder="Write your Info" type="text"  aria-label="default input example">
+         <h2>Image:</h2>
+         <input  [(ngModel)]="editImage" class="form-control" placeholder="Write your URL" type="text"  aria-label="default input example">
+      </div>
+      <button (click)="addItem()" type="button" class="btn btn-warning ms-1 mb-10">Confirm</button>
+   </div>
+   
+</div>
